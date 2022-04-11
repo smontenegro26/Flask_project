@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Regenerations</title>
+</head>
+<body style="background-color:lightgray;">
+  <center><h1>Doctor Who Regenerations</h1></center>
+  <center><img src='http://www.trbimg.com/img-1385394441/turbine/redeye-doctor-who-photos-11-doctors-20131122-015/850'></center>
+</body>
+ 
+{% for doctor in doctors %}   
+  <h2>
+    <center><a href="/doctors/{{doctor.regeneration}}">
+    Regeneration {{doctor.regeneration}}
+    </a></center>
+  </h2>
+  <center><h4> (Click to see more) </h4></center>
+{% endfor %}
+ 
+</html>

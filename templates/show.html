@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Regenerations</title>
+</head>
+<body style="background-color:lightgray;">
+  <h1>Doctor Who Regeneration {{doctor.regeneration}}</h1>
+</body>
+  <ul>
+    {% for key , value in doctor.items() %}   
+      <li> {{key|title}} : {{value}}
+      </li>
+    {% endfor %}
+  <ul>
+
+  <br><a href="/doctors">Back</a>
+</html>
